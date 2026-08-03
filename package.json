@@ -1,0 +1,60 @@
+{
+  "name": "priest-md",
+  "version": "1.0.0",
+  "description": "Priest MD \u2014 Developed by Inkora Systems. A modular Multi-Device WhatsApp bot framework with a Telegram control panel.",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "lint": "eslint .",
+    "check": "node --check index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "multi-device",
+    "telegram",
+    "bot",
+    "framework",
+    "md"
+  ],
+  "author": "Inkora Systems",
+  "license": "Proprietary",
+  "private": true,
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@whiskeysockets/baileys": "^6.7.24",
+    "adm-zip": "^0.5.16",
+    "axios": "^1.7.9",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "ffmpeg-static": "^5.3.0",
+    "file-type": "17.1.6",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.1",
+    "gifted-baileys": "npm:@whiskeysockets/baileys@^6.7.24",
+    "gifted-btns": "file:lib/gifted-btns",
+    "gifted-dls": "^1.3.5",
+    "jimp": "^1.6.1",
+    "moment-timezone": "^0.5.45",
+    "mongoose": "^8.9.5",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
+    "pino": "^9.6.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.33.5",
+    "telegraf": "^4.16.3",
+    "wa-sticker-formatter": "^4.4.4",
+    "yt-search": "^2.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "eslint-plugin-import": "^2.32.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "gifted-btns",
+  "version": "1.0.2",
+  "description": "Clean local replacement for gifted-btns (PRIEST MD) — sends WhatsApp buttons messages via Baileys.",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {}
+}

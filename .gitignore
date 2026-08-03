@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets
+.env
+.env.local
+*.env
+
+# Runtime data
+sessions/
+logs/
+backups/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+# WhatsApp session credentials (never commit!)
+sessions/
+
+# Black-hat bridge runtime data (settings, sudo, notes, group settings)
+config/blackhat-data/
+
+# Copyrighted preview clip — keep local, do not publish
+assets/music/connect.mp3

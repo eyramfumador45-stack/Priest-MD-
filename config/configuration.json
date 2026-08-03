@@ -1,0 +1,165 @@
+{
+  "bot": {
+    "name": "Priest MD",
+    "developer": "Inkora Systems",
+    "version": "1.0.0",
+    "prefixes": [
+      "."
+    ],
+    "groupPrefix": ".",
+    "sessionPrefix": "PriestMD",
+    "maintenance": false,
+    "startupMessage": true
+  },
+  "telegram": {
+    "enabled": true,
+    "allowPairing": true,
+    "admins": [],
+    "maxSessionsPerUser": 10,
+    "dashboard": {
+      "enabled": true,
+      "refreshIntervalSec": 30
+    }
+  },
+  "whatsapp": {
+    "enabled": true,
+    "autoReconnect": true,
+    "reconnectDelayMs": 5000,
+    "maxReconnectRetries": 10,
+    "usePairingCode": true,
+    "allowQr": true,
+    "syncFullHistory": false,
+    "markOnline": true,
+    "sessionCleanupDays": 30,
+    "botIcon": {
+      "enabled": true,
+      "file": "assets/bot-icon.png"
+    },
+    "connectMusic": {
+      "enabled": true,
+      "file": "assets/music/connect.mp3",
+      "target": "self"
+    }
+  },
+  "features": {
+    "commands": true,
+    "plugins": true,
+    "events": true,
+    "security": true,
+    "scheduler": true,
+    "leveling": true,
+    "economy": true,
+    "autoResponses": true,
+    "welcomeSystem": true,
+    "goodbyeSystem": true,
+    "blackhatCommands": true
+  },
+  "security": {
+    "antiHijack": {
+      "enabled": true,
+      "action": "kick"
+    },
+    "antiRaid": {
+      "enabled": true,
+      "windowMs": 60000,
+      "threshold": 10,
+      "action": "mute"
+    },
+    "antiSpam": {
+      "enabled": true,
+      "limit": 5,
+      "windowMs": 10000,
+      "action": "warn"
+    },
+    "antiFlood": {
+      "enabled": true,
+      "limit": 8,
+      "windowMs": 15000,
+      "action": "mute"
+    },
+    "antiDelete": {
+      "enabled": false,
+      "action": "log"
+    },
+    "antiBot": {
+      "enabled": true,
+      "action": "kick"
+    },
+    "antiCall": {
+      "enabled": true,
+      "action": "reject"
+    },
+    "antiLink": {
+      "enabled": false,
+      "action": "warn"
+    },
+    "antiInvite": {
+      "enabled": false,
+      "action": "warn"
+    },
+    "antiNuke": {
+      "enabled": true,
+      "action": "mute"
+    },
+    "antiAbuse": {
+      "enabled": true,
+      "action": "warn"
+    },
+    "antiMention": {
+      "enabled": false,
+      "limit": 15,
+      "action": "warn"
+    },
+    "antiFakeNumber": {
+      "enabled": false,
+      "action": "kick"
+    },
+    "antiForeignNumber": {
+      "enabled": false,
+      "allowedCountryCodes": [],
+      "action": "kick"
+    },
+    "verification": {
+      "enabled": true
+    },
+    "captcha": {
+      "enabled": true,
+      "length": 5,
+      "expiryMs": 300000
+    }
+  },
+  "limits": {
+    "maxGroupSize": 500,
+    "maxPendingPairings": 20,
+    "broadcastDelayMs": 2000
+  },
+  "cooldowns": {
+    "default": 5000,
+    "min": 1000,
+    "max": 3600000
+  },
+  "logging": {
+    "level": "info",
+    "console": true,
+    "file": true,
+    "fileRetentionDays": 7,
+    "auditEnabled": true
+  },
+  "database": {
+    "uri": "mongodb://127.0.0.1:27017/priestmd",
+    "options": {}
+  },
+  "performance": {
+    "cacheEnabled": true,
+    "cacheTtlMs": 60000,
+    "maxConcurrentMessages": 50
+  },
+  "owner": [],
+  "admins": [],
+  "premium": [],
+  "blacklist": {
+    "users": [],
+    "groups": [],
+    "commands": []
+  }
+}
